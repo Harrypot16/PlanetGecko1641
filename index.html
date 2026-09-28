@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ViewTube</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%23ff0000'/><polygon points='38,28 75,50 38,72' fill='white'/></svg>" />
+    <meta name="description" content="Privacy-focused YouTube client with custom streaming, privacy embeds, search, trending, and watch history." />
+    <meta property="og:title" content="ViewTube" />
+    <meta property="og:description" content="Privacy-focused YouTube client with custom streaming, privacy embeds, search, trending, and watch history." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script>
+      // Suppress Vite HMR WebSocket connection failure noise in preview/iframe environment
+      window.addEventListener('error', function(e) {
+        if (e && (e.message?.includes('WebSocket') || e.target?.toString?.().includes('WebSocket'))) {
+          e.stopImmediatePropagation();
+        }
+      }, true);
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

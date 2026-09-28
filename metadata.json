@@ -1,0 +1,6 @@
+{
+  "name": "ViewTube",
+  "description": "Privacy-focused YouTube client with custom streaming, privacy embeds, search, trending, and watch history.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
